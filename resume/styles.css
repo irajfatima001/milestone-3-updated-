@@ -1,0 +1,176 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+}
+.resumeDiv {
+  width: 70%;
+
+  border: 2px solid black;
+}
+header {
+  width: 100%;
+  height: 160px;
+  background-color: rgb(19, 133, 104);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+}
+.white{
+  color: white;
+
+}
+header img {
+  width: 150px;
+  height: 160px;
+  border-radius: 50%;
+  border: 1px solid black;
+ margin: 6px;
+}
+
+
+.content {
+  width: 100%;
+  display: flex;
+}
+.content aside {
+  width: 30%;
+  background-color: aliceblue;
+  padding-left: 50px;
+  padding-bottom: 50px;
+  padding-top: 6px;
+}
+aside{
+  width: auto;
+}
+.contact,
+.education,
+.skill,
+.language {
+  margin-bottom: 20px;
+}
+.contact h2,
+.education h2,
+.skill h2,
+.language h2,
+.experience h2,
+.reference h2 {
+  border-bottom: 2px solid rgb(19, 133, 104);
+  margin-bottom: 10px;
+  padding-bottom: 3px;
+  color: rgb(19, 133, 104);
+}
+.education {
+  line-height: 20px;
+}
+.skill ul {
+  margin-left: 18px;
+}
+.main-content {
+  padding-left: 50px;
+  width: 70%;
+  padding-top: 6px;
+
+}
+.experience-items {
+  margin-bottom: 39px;
+}
+
+.experience-items p {
+  margin-bottom: 4px;
+}
+.experience-items ul {
+  margin-left: 18px;
+  margin-top: 15px;
+}
+.btnDiv{
+  width: 70%;
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+}
+.btn{
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: white;
+  background: #0a6b53;
+  cursor: pointer;
+  
+  &:hover{
+    background: rgb(10, 66, 52)
+   
+
+  }
+  &:active{
+    transform: scale(0.95);
+  }
+}
+.hide {
+  display: none;
+
+}
+@media print{
+  .btnDiv{
+    display: none;
+  }
+}
+
+@media (max-width: 786px){
+  .content{
+    flex-direction: column;
+  }
+  aside, .main-content {
+    width: 100%;
+
+  }
+  .content aside {
+    width: 100%;
+    background-color: aliceblue; 
+      
+    padding-bottom: 20px;
+    padding-top: 6px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header h1 {
+    font-size: 25px;
+  }
+
+  header .para {
+    font-size: 16px;
+  }
+
+  header {
+    height: auto;
+  }
+  h1 {
+    font-size: 10pt;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
